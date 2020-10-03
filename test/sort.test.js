@@ -1,6 +1,7 @@
 import selectionSort from "../src/sort/selectionSort";
 import insertionSort from "../src/sort/insertionSort";
 import quickSort from "../src/sort/quickSort";
+import mergeSort from "../src/sort/mergeSort";
 
 // an array of test presets
 const presets = [
@@ -11,7 +12,7 @@ const presets = [
     [1, -1],
 ]
 
-const algos = {selectionSort, insertionSort, quickSort};
+const algos = {selectionSort, insertionSort, quickSort, mergeSort};
 Object.keys(algos).forEach(algoName => {
     describe(algoName, () => {
         presets.forEach(preset => {
