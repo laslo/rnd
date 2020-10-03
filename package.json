@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "start": "babel src -d lib --watch",
     "test": "jest"
   },
   "repository": {
