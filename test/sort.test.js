@@ -1,4 +1,5 @@
 import selectionSort from "../src/algorithms/selectionSort";
+import insertionSort from "../src/algorithms/insertionSort";
 
 // an array of test presets
 // in each preset, first element is `input` and second is `result`
@@ -22,7 +23,7 @@ const presets = [
 ]
 
 describe("Sorting", () => {
-    const algos = {selectionSort};
+    const algos = {selectionSort, insertionSort};
     Object.keys(algos).forEach(algoName => {
         it(algoName, () => {
             presets.forEach(preset => {
